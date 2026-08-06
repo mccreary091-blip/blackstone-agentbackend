@@ -24,7 +24,7 @@ const match = text.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/);
 return match ? match[0] : null;
 }
 
-https://www.google.com/url?q=http://app.post&source=gmail&ust=1786081300803000&sa=E('/api/chat', async (req, res) => {
+app.post('/api/chat', async (req, res) => {
 try {
 const { messages, leadInfo } = req.body;
 
